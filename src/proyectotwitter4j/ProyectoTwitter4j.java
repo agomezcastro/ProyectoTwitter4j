@@ -16,9 +16,19 @@ import twitter4j.conf.ConfigurationBuilder;
 public class ProyectoTwitter4j {
 
 
-    public static void main(String[] args) {
-        Twitter mitwitter = new TwitterFactory().getInstance();
-        //asdasdasdasd
+    public static void main(String[] args) throws TwitterException {
+        
+        TwitterFactory tf = new TwitterFactory();
+        Twitter mitwitter = tf.getInstance();
+        Status miStatus = mitwitter.updateStatus("que opinas del nuevo episodio de juego de tronos? @PokemonArray");
+        System.out.println(miStatus.getText());
+        
+        
+        /*List<Status> statuses = mitwitter.getHomeTimeline();
+    System.out.println("Showing home timeline.");
+    for (Status status : statuses) {
+        System.out.println(status.getUser().getName() + ":" +
+        status.getText());
     }
     
     
@@ -27,7 +37,6 @@ public class ProyectoTwitter4j {
     for (Status status : result.getTweets()) {
         System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
             }*/
-    
-        }
     }
+        }
 
