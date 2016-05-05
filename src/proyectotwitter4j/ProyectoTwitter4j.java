@@ -1,19 +1,18 @@
 package proyectotwitter4j;
 
-import java.util.List;
-import twitter4j.Query;
-import twitter4j.QueryResult;
+
 import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
-import twitter4j.conf.ConfigurationBuilder;
+
 
 /**
  *
  * @author agomezcastro
  */
 public class ProyectoTwitter4j {
+
 
 
     public static void main(String[] args) throws TwitterException {
@@ -29,6 +28,13 @@ public class ProyectoTwitter4j {
     for (Status status : statuses) {
         System.out.println(status.getUser().getName() + ":" +
         status.getText());
+=======
+    public static void main(String[] args) {
+        Twitter mitwitter = new TwitterFactory().getInstance();
+        //asdasdasdasd
+        
+        //yo creo que tu proyecto esta bugeado porque leblanc deletea gente
+>>>>>>> 048390bc47e047549b0c552afc2e92c97741c86b
     }
     
     
