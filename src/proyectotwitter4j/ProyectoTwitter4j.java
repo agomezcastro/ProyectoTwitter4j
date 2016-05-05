@@ -19,7 +19,7 @@ public class ProyectoTwitter4j {
         
         TwitterFactory tf = new TwitterFactory();
         Twitter mitwitter = tf.getInstance();
-        Status miStatus = mitwitter.updateStatus("que opinas del nuevo episodio de juego de tronos? @PokemonArray");
+        Status miStatus = mitwitter.updateStatus("que opinas del nuevo episodio de juego de tronos? @Sjokz"); //uhum
         System.out.println(miStatus.getText());
         
         
