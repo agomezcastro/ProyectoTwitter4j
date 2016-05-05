@@ -24,19 +24,7 @@ public class ProyectoTwitter4j {
         System.out.println(miStatus.getText());
         
         
-        /*List<Status> statuses = mitwitter.getHomeTimeline();
-    System.out.println("Showing home timeline.");
-    for (Status status : statuses) {
-        System.out.println(status.getUser().getName() + ":" +
-        status.getText());
-    }
-    
-    
-        Query query = new Query("#petartwitter");
-    QueryResult result = mitwitter.search(query);
-    for (Status status : result.getTweets()) {
-        System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
-            }*/
+        
     }
         }
 
